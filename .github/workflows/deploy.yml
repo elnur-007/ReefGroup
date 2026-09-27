@@ -1,0 +1,66 @@
+name: Deploy ReefGroup to SmarterASP
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-ReefGroup
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publish
+        run: dotnet publish "ReefGroup.csproj" -c Release -o publish
+
+      - name: Force OutOfProcess hosting model
+        run: |
+          sed -i 's/hostingModel="[Ii]n[Pp]rocess"/hostingModel="OutOfProcess"/' publish/web.config
+          grep -q 'hostingModel="OutOfProcess"' publish/web.config
+          rm -f publish/appsettings.Development.json
+
+      - name: Write appsettings.json
+        env:
+          APPSETTINGS_JSON: ${{ secrets.APPSETTINGS_JSON }}
+        run: |
+          if [ -n "$APPSETTINGS_JSON" ]; then
+            printf '%s' "$APPSETTINGS_JSON" > publish/appsettings.json
+          else
+            cat > publish/appsettings.json <<'JSON'
+          {
+            "Logging": { "LogLevel": { "Default": "Information", "Microsoft.AspNetCore": "Warning" } },
+            "AllowedHosts": "*"
+          }
+          JSON
+          fi
+
+      - name: Take site offline
+        run: |
+          echo '<html><body style="font-family:sans-serif"><h3>Site is being updated, back in a minute.</h3></body></html>' > app_offline.htm
+          curl -sS --ftp-pasv -T app_offline.htm "ftp://${{ secrets.FTP_SERVER }}/app_offline.htm" -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}"
+          sleep 10
+
+      - name: Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./publish/
+          server-dir: /
+          exclude: |
+            **/*.pdb
+
+      - name: Bring site online
+        if: always()
+        run: |
+          curl -sS --ftp-pasv -Q "DELE app_offline.htm" "ftp://${{ secrets.FTP_SERVER }}/" -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" -o /dev/null || true
