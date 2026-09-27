@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <link rel="icon" type="image/x-icon" href="~/assets/img/icons/reef_icon.svg" asp-append-version="true" />
+    <link rel="stylesheet" href="~/scss/blog.css" asp-append-version="true" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                <div>
+                    <img src="~/assets/img/aboutPageImg/ReefGroupLogo.svg" alt="ReefGroup" asp-append-version="true" />
+                </div>
+            </a>
+            <ul>
+                <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                <li><a asp-controller="Projects" asp-action="Gallery">Project Gallery</a></li>
+                <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--blog-section-->
+    <section class="blog-section">
+        <div class="blog-section-main">
+            <div class="blog-section-main-title">
+                <p>Blog</p>
+            </div>
+
+            <div class="blog-section-main-flex-box">
+                <article class="blog-card">
+                    <a asp-controller="Blog" asp-action="Detail_1" class="blog-card-link">
+                        <img class="blog-card-image" src="~/assets/img/news/news_1.png"p" alt="Blog-Img" asp-append-version="true" />
+                        <div class="blog-card-icons">
+                            <div class="blog-card-icons-wrapper">
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/star.svg" alt="star-icon" asp-append-version="true" />
+                                    <p>Featured</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Datetime</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Blog</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card-description">
+                            <p>The Reef Group delegation participated in the Azerbaijan International Investment Forum (AIIF)</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="blog-card">
+                    <a asp-controller="Blog" asp-action="Detail_2" class="blog-card-link">
+                        <img class="blog-card-image" src="~/assets/img/news/news_2.png" alt="Blog-Img" asp-append-version="true" />
+                        <div class="blog-card-icons">
+                            <div class="blog-card-icons-wrapper">
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/star.svg" alt="star-icon" asp-append-version="true" />
+                                    <p>Featured</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Datetime</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Blog</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card-description">
+                            <p>Reef Group Expands Horizons: Large-Scale Gold Mining Contract Signed in Afghanistan</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="blog-card">
+                    <a asp-controller="Blog" asp-action="Detail_3" class="blog-card-link">
+                        <img class="blog-card-image" src="~/assets/img/news/news_3.png" alt="Blog-Img" asp-append-version="true" />
+                        <div class="blog-card-icons">
+                            <div class="blog-card-icons-wrapper">
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/star.svg" alt="star-icon" asp-append-version="true" />
+                                    <p>Featured</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Datetime</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Blog</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card-description">
+                            <p>Reef Group Representatives Attend Formal Reception Hosted by the Embassy of Azerbaijan in Bishkek</p>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+
+            <!-- contact -->
+            <partial name="Navbar_Contact" />
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" asp-controller="Account" asp-action="Register">Become a member</a>
+                </div>
+            </div>
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="" asp-append-version="true" />
+            </div>
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
+                            <li><a asp-controller="Legal" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Legal" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="twiter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="linkedin" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

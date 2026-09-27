@@ -1,0 +1,213 @@
+﻿@{
+    Layout = null; // Eğer _Layout kullanacaksan: Layout = "_Layout";
+    ViewData["Title"] = "Blog Detail";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <!-- Favicon (SVG) -->
+    <link rel="icon" type="image/svg+xml" href="~/assets/img/icons/reef_icon.svg" asp-append-version="true" />
+
+    <!-- Sayfaya özel stil -->
+    <link rel="stylesheet" href="~/scss/blogDetail.css" asp-append-version="true" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                <div>
+                    <img src="~/assets/img/aboutPageImg/ReefGroupLogo.svg" alt="Reef Group Logo" asp-append-version="true" />
+                </div>
+            </a>
+            <ul>
+                <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                <li><a asp-controller="Project" asp-action="Gallery">Project Gallery</a></li>
+                <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--BlogDetail-section-->
+    <section class="blogDetail-section">
+        <div class="blogDetail-section-main">
+            <div class="blogDetail-block-text" style="margin-bottom: 100px">
+                <div class="blogDetail-block-text-title">
+                    <p>Blog</p>
+                </div>
+                <div class="blogDetail-block-text-description">
+                    <p style="font-size: 50px">
+                        The Reef Group delegation participated in the Azerbaijan International Investment Forum (AIIF)
+                    </p>
+                </div>
+            </div>
+
+            <div class="blogDetail-info-block">
+                <div class="blog-card-icons-wrapper">
+                    <div>
+                        <img src="~/assets/img/blogPageImg/star.svg" alt="star-icon" asp-append-version="true" />
+                        <p>Featured</p>
+                    </div>
+                    <div>
+                        <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                        <p>Datetime</p>
+                    </div>
+                    <div>
+                        <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                        <p>Blog</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogDetail-block-img">
+                <div class="blogDetail-block-image">
+                    <img src="~/assets/img/news/news_1.png" alt="Blog Image" asp-append-version="true" />
+                </div>
+            </div>
+
+            <div class="blogDetail-description-block">
+                <p>
+                    The Reef Group delegation participated in the First Azerbaijan International Investment Forum (AIIF), where discussions focused on economic diversification and investment attraction. Participation in the forum enabled the company to strengthen its international business relationships and discuss industrial sector trends with potential partners.
+                </p>
+                <br>
+                <p>
+                    The main topics of discussion included the diversification of the regional economy, the development of modern infrastructure, and new strategies for attracting long-term capital to the industrial sector. Forum participants also emphasized Azerbaijan’s role as a stable and reliable economic bridge between East and West.
+
+                </p>
+                <br>
+                <p>
+                    For <b>Reef Group</b>, participation in the forum marked an important step in expanding its international presence and strengthening ties with the global investment community. During the event, the company's leadership held a series of meetings with international experts and potential partners to discuss the latest trends in the industrial sector and exchange expertise on sustainable economic development.
+                </p>
+            </div>
+
+            <div class="blogDetail-section-main-title">
+                <p>Latest News</p>
+            </div>
+
+            <div class="blogDetail-section-main-flex-box">
+                <article class="blog-card">
+                    <a asp-controller="Blog" asp-action="Detail_2" class="blog-card-link">
+                        <img class="blog-card-image"
+                             src="~/assets/img/news/news_2.png"
+                             alt="Blog-Img" asp-append-version="true" />
+                        <div class="blog-card-icons">
+                            <div class="blog-card-icons-wrapper">
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/star.svg" alt="star-icon" asp-append-version="true" />
+                                    <p>Featured</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Datetime</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Blog</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card-description">
+                            <p>
+                                Reef Group Expands Horizons: Large-Scale Gold Mining Contract Signed in Afghanistan
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="blog-card">
+                    <a asp-controller="Blog" asp-action="Detail_3" class="blog-card-link">
+                        <img class="blog-card-image"
+                             src="~/assets/img/news/news_3.png"
+                             alt="Blog-Img" asp-append-version="true" />
+                        <div class="blog-card-icons">
+                            <div class="blog-card-icons-wrapper">
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/star.svg" alt="star-icon" asp-append-version="true" />
+                                    <p>Featured</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Datetime</p>
+                                </div>
+                                <div>
+                                    <img src="~/assets/img/blogPageImg/calendar.svg" alt="calendar-icon" asp-append-version="true" />
+                                    <p>Blog</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card-description">
+                            <p>
+                                Reef Group Representatives Attend Formal Reception Hosted by the Embassy of Azerbaijan in Bishkek
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--contacts-->
+    <partial name="Navbar_Contact" />
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" href="#">Become a member</a>
+                </div>
+            </div>
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="Footer Title" asp-append-version="true" />
+            </div>
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Project" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Faq">FAQ</a></li>
+                            <li><a asp-controller="Home" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Home" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="twitter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="linkedin" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <link rel="icon" type="image/x-icon" href="~/assets/img/icons/reef_icon.svg" asp-append-version="true" />
+    <link rel="stylesheet" href="~/scss/contact.css" asp-append-version="true" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                <div>
+                    <img src="~/assets/img/aboutPageImg/ReefGroupLogo.svg" alt="ReefGroup" asp-append-version="true" />
+                </div>
+            </a>
+            <ul>
+                <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                <li><a asp-controller="Projects" asp-action="Gallery">Project Gallery</a></li>
+                <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--contact-main-->
+    <section class="contact-main-section">
+        <div class="contact-main-section-block">
+            <div class="contact-main-section-block-text">
+                <div class="contact-main-section-block-text-title">
+                    <p>Contact</p>
+                </div>
+                <div class="contact-main-section-block-text-description">
+                    <p>Let's <span>Work</span> Together</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--info-section-->
+    <section class="info-section">
+        <div class="info-section-main">
+            <div class="info-section-main-flex-container">
+                <div class="info-section-main-flex-box1">
+                    <div class="info-section-main-flex-box1-phone box">
+                        <div class="box-title">Phone</div>
+                        <p class="box-text">
+                            +994 70 235 32 06 (Azerbaijan)
+                            <br>
+                            +996 558 028 241 (Kyrgyzstan)
+                            <br>
+                            +77713587938 (Kazakhstan)
+                            <br>
+                            +93701087682 (Afghanistan)
+                        </p>
+                    </div>
+                    <div class="info-section-main-flex-box1-office box">
+                        <div class="box-title">Office:</div>
+                        <p class="box-text">
+                            Head Office, Kyrgyz Republic, Bishkek, A. Aidaraliyev str.60
+                            <br>
+                            Almaty Office Republic of Kazakhstan, Almaty, Bayzakova str. 280
+                            <br>
+                            Kabul Office Islamic Emirate of Afghanistan, Wazir Akbar Khan Str.15, Villa 13
+                        </p>
+                    </div>
+                    <div class="info-section-main-flex-box1-email box">
+                        <div class="box-title">Email</div>
+                        <p class="box-text">info@reefgroup.org</p>
+                    </div>
+                </div>
+
+                <div class="info-section-main-flex-box2">
+                    <div class="info-section-main-flex-box2-time box2">
+                        <div class="box2-title">Opening hours</div>
+                        <div class="box2-desc">
+                            <p>Mon to Fri: 9.00am - 5.00pm</p>
+                            <p>Sat: 10.00am - 3.30pm</p>
+                            <p>Sun: Closed</p>
+                        </div>
+                    </div>
+                    <div class="info-section-main-flex-box2-social box2">
+                        <div class="box2-title">Follow us</div>
+                        <div class="box2-social-icons">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                                <img src="~/assets/img/contactPageImg/mdi_linkedin.svg" alt="LinkedIn" asp-append-version="true" />
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                                <img src="~/assets/img/contactPageImg/facebook.svg" alt="Facebook" asp-append-version="true" />
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                                <img src="~/assets/img/contactPageImg/mingcute_instagram-fill.svg" alt="Instagram" asp-append-version="true" />
+                            </a>
+                            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter">
+                                <img src="~/assets/img/contactPageImg/mdi_twitter.svg" alt="Twitter" asp-append-version="true" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="map-section">
+                <img src="~/assets/img/contactPageImg/90f08b0a71c3620a8f845aa1da96224461bde4fd.png" alt="Map" asp-append-version="true" />
+            </aside>
+
+            <section class="contacts-container">
+                <div class="contacts-container-left-block">
+                    <div class="contacts-container-left-block-name">
+                        <p>Let's Talk</p>
+                    </div>
+
+                    <div class="contacts-container-left-block-empty"></div>
+                </div>
+                <aside class="contacts-container-right-block">
+                    <form action="#" method="post" class="contact-form">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Fullname" required />
+                            <input type="email"
+                                   name="email"
+                                   placeholder="Email"
+                                   required />
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" name="phone" placeholder="Phone" />
+                            <input type="text" name="subject" placeholder="Subject" />
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message"
+                                      rows="5"
+                                      placeholder="Message..."
+                                      required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit"><span>Submit</span></button>
+                        </div>
+                    </form>
+                </aside>
+            </section>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" asp-controller="Account" asp-action="Register">Become a member</a>
+                </div>
+            </div>
+
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="Footer Title" asp-append-version="true" />
+            </div>
+
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
+                            <li><a asp-controller="Legal" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Legal" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="Twitter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="LinkedIn" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

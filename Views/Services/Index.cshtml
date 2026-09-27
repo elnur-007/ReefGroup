@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Service</title>
+
+    <link rel="icon" type="image/x-icon" href="~/assets/img/icons/reef_icon.svg" asp-append-version="true" />
+    <link rel="stylesheet" href="~/scss/ourService.css" asp-append-version="true" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                <div>
+                    <img src="~/assets/img/aboutPageImg/ReefGroupLogo.svg" alt="ReefGroup" asp-append-version="true" />
+                </div>
+            </a>
+            <ul>
+                <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                <li><a asp-controller="Projects" asp-action="Gallery">Project Gallery</a></li>
+                <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--potensial-section-->
+    <section class="potensial-section">
+        <div class="potensial-section-block">
+            <div class="potensial-section-block-text">
+                <div class="potensial-section-block-text-title">
+                    <p>Our Service</p>
+                </div>
+                <div class="potensial-section-block-text-description">
+                    <p style="font-size: 50px">
+                        Comprehensive Mining Solutions for Every Stage of Your Project
+                        Engineering Excellence in Mining and Exploration
+                        From Exploration to Extraction — <span>We Deliver Results</span>
+                    </p>
+                </div>
+                <a href="#" class="more-btn">Work with us</a>
+            </div>
+        </div>
+    </section>
+
+    <!--works-section-->
+    <section class="works-section">
+        <div class="works-section-block">
+            <div class="icons-row">
+                <div class="item-icon" id="icon-0">
+                    <img class="item-icon-svg" src="~/assets/img/homepageImg/1iconsvg.svg" alt="" asp-append-version="true" />
+                </div>
+                <div class="line"></div>
+                <div class="item-icon" id="icon-1">
+                    <img class="item-icon-svg" src="~/assets/img/homepageImg/employeeIcon.svg" alt="" asp-append-version="true" />
+                </div>
+                <div class="line"></div>
+                <div class="item-icon" id="icon-2">
+                    <img class="item-icon-svg" src="~/assets/img/homepageImg/3iconsvg.svg" alt="" asp-append-version="true" />
+                </div>
+                <div class="line"></div>
+                <div class="item-icon" id="icon-3">
+                    <img class="item-icon-svg" src="~/assets/img/homepageImg/4iconsvg.svg" alt="" asp-append-version="true" />
+                </div>
+                <div class="line"></div>
+            </div>
+
+            <div class="works-section-block-card-container">
+                <div class="works-section-block-card" id="card-0">
+                    <div class="works-section-block-card-description">
+                        <div class="works-section-block-card-description-title">
+                            <p>Drilling and Blasting Operations</p>
+                        </div>
+                        <div class="works-section-block-card-description-about">
+                            <p>
+                                <b>Reef Group</b> provides full-cycle drilling and blasting services for mining operations.
+                                Our fleet includes advanced rigs such as Powerroc T35, Furukawa HCR1200, and Atlas Copco SmartROC D65, ensuring precision and efficiency in every operation.
+                                We prepare blasting block designs, execute controlled detonations, and ensure maximum rock fragmentation with minimal environmental impact.
+                                With a strong safety culture and experienced personnel, Reef Group delivers reliable, high-quality results in complex geological conditions.
+                            </p>
+                        </div>
+                        <div class="works-section-block-card-description-btn">
+                            <a href="#" class="more-btn">Work with us</a>
+                        </div>
+                    </div>
+                    <div class="works-section-block-card-image">
+                        <img src="~/assets/img/ourServiceImg/timelinesection1Img.webp" alt="" asp-append-version="true" />
+                    </div>
+                </div>
+
+                <div class="works-section-block-card" id="card-1">
+                    <div class="works-section-block-card-description">
+                        <div class="works-section-block-card-description-title">
+                            <p>Transportation and Excavation Work</p>
+                        </div>
+                        <div class="works-section-block-card-description-about">
+                            <p>
+                                <b>Reef Group</b> carries out excavation and transportation of rock mass as part of integrated mining operations.
+                                Our team manages all stages — from overburden removal and pit excavation to the safe and efficient transportation of raw materials.
+                                We operate a modern fleet of specialized machinery and maintain strict control over logistics, productivity, and safety to meet the highest industry standards.
+                            </p>
+                        </div>
+                        <div class="works-section-block-card-description-btn">
+                            <a href="#" class="more-btn">Work with us</a>
+                        </div>
+                    </div>
+                    <div class="works-section-block-card-image">
+                        <img src="~/assets/img/ourServiceImg/timeLineSection2img.webp" alt="" asp-append-version="true" />
+                    </div>
+                </div>
+
+                <div class="works-section-block-card" id="card-2">
+                    <div class="works-section-block-card-description">
+                        <div class="works-section-block-card-description-title">
+                            <p>Consulting Services</p>
+                        </div>
+                        <div class="works-section-block-card-description-about">
+                            <p>
+                                <b>Reef Group</b> provides comprehensive consulting for the mining industry, covering all
+                                stages — from geological exploration to economic evaluation. <b>Geological Exploration & Prospecting</b>
+                                We analyze geological data, design exploration programs, supervise drilling operations,
+                                and estimate mineral reserves according to <b>GKZ, JORC, NI 43-101, KAZRC,</b> and <b>CRIRSCO</b>
+                                standards. <b>GIS&Cartography</b>. We develop and maintain <b>GIS databases,</b> create <b>3D geological models</b>
+                                , and produce <b>digital maps</b> using tools like <b>ArcGIS, MapInfo,</b> and <b>Surpac.
+                                Deposit Evaluation&Economics.</b> We conduct <b>feasibility studies, mine design,</b> and
+                                <b>economic assessments</b> to ensure efficient and profitable project development.
+                                Our team includes professionals who are members of international organizations and
+                                institutes such as AIG and AusIMM. They are recognized as Competent Persons.
+                            </p>
+                        </div>
+                        <div class="works-section-block-card-description-btn">
+                            <a href="#" class="more-btn">Work with us</a>
+                        </div>
+                    </div>
+                    <div class="works-section-block-card-image">
+                        <img src="~/assets/img/ourServiceImg/worksSectionImg3.webp" alt="" asp-append-version="true" />
+                    </div>
+                </div>
+
+                <div class="works-section-block-card" id="card-3">
+                    <div class="works-section-block-card-description">
+                        <div class="works-section-block-card-description-title">
+                            <p>Geological Services</p>
+                        </div>
+                        <div class="works-section-block-card-description-about">
+                            <p>
+                                <b>Reef Group</b> performs a complete range of geological exploration works — from the development of work programs and project documentation to field exploration and resource evaluation.
+                                Our specialists conduct drilling operations using rigs such as MORSET (LF230 MUADİLİ) and Christensen 140, supported by advanced analytical and reporting tools.
+                                We prepare feasibility studies, resource estimation reports, and offer consulting and auditing services in accordance with international standards.
+                                Our mission is to deliver precise geological data that form the foundation for sustainable mining and investment decisions.
+                            </p>
+                        </div>
+                        <div class="works-section-block-card-description-btn">
+                            <a href="#" class="more-btn">Work with us</a>
+                        </div>
+                    </div>
+                    <div class="works-section-block-card-image">
+                        <img src="~/assets/img/ourServiceImg/worksSectiomImg4.webp" alt="" asp-append-version="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contacts-->
+    <partial name="Navbar_Contact" />
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" asp-controller="Account" asp-action="Register">Become a member</a>
+                </div>
+            </div>
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="" asp-append-version="true" />
+            </div>
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
+                            <li><a asp-controller="Legal" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Legal" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="twiter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="linkedin" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/ourService.js" asp-append-version="true"></script>
+</body>
+</html>

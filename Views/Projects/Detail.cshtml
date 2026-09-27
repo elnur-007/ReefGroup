@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+
+    <link rel="icon" type="image/x-icon" href="~/assets/img/icons/reef_icon.svg" asp-append-version="true" />
+    <link rel="stylesheet" href="~/scss/projectDetail.css" asp-append-version="true" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                <div>
+                    <img src="~/assets/img/aboutPageImg/ReefGroupLogo.svg" alt="ReefGroup" asp-append-version="true" />
+                </div>
+            </a>
+            <ul>
+                <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                <li><a asp-controller="Projects" asp-action="Gallery">Project Gallery</a></li>
+                <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--projectDetail-section-->
+    <section class="projectDetail-section">
+        <div class="projectDetail-section-main">
+            <div class="projectDetail-block-text" style="margin-bottom: 100px">
+                <div class="projectDetail-block-text-title">
+                    <p>Our Projects</p>
+                </div>
+                <div class="projectDetail-block-text-description">
+                    <p>Activities of Company in Emirate of Afghanistan</p>
+                </div>
+                <a href="#" class="more-btn">Work with us</a>
+            </div>
+
+            <div class="projectDetail-info-block">
+                <div class="projectDetail-info-block-desc">
+                    <p>Location:</p>
+                    <span>Afghanistan</span>
+                </div>
+                <div class="projectDetail-info-block-desc">
+                    <p>Year:</p>
+                    <span>2024</span>
+                </div>
+            </div>
+
+            <div class="projectDetail-block-img">
+                <div class="projectDetail-block-image">
+                    <img src="~/assets/img/projectDetailImg/projectImg (1).webp" alt="" asp-append-version="true" />
+                </div>
+            </div>
+
+            <div class="projectDetail-mini-block">
+                <p>
+                    In 12.12.2024 Reef Group has participated in  tender process for the Qale Zal Gold Kunduz Project mining area. To facilitate the tender-related proceedings, we officially signed agreement between Reef Group LLC (Consortium Leader) and Subhan Mohmand Extraction and Processing Company LLC (Local Partner), holder of business license in Mining Sector No. 86181, dated 26/Sep/2024, issued by the Ministry of Industry and Commerce.
+                </p>
+            </div>
+
+            <div class="projectDetail-description-block" style="padding-bottom: 100px">
+                <p>
+                    “Results of Geological Investigations and Completed Exploration Works at the “Qale-Zal” Gold Project
+                    On June 17, 2025, “Reef Group” LLC launched geological works at the mining site of the “Qale Zal” gold project located in Kunduz province. The works were carried out by Azerbaijani specialists of “Reef Group” LLC.
+                </p>
+                <br>
+                <p>Exploration activities were conducted over a total area of 300 hectares and included the following operations:</p>
+                <br>
+                <ul>
+                    <li>
+                        • Office-based studies and collection of geological data from previous years
+                    </li>
+                    <li>
+                        • Geological mapping (scale 1:25,000)
+                    </li>
+                    <li>
+                        • Collection of lithogeochemical and heavy mineral samples
+                    </li>
+                    <li>
+                        • Excavation of test pits and collection of surface samples
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    Determination of gold content, particle size distribution, and
+                    mineralogical  composition was carried out using the sample washing
+                    method.
+                </p>
+                <br>
+                <p>
+                    As a result of these works, preliminary data regarding the presence and
+                    distribution of gold in the “Qale-Zal” area have been obtained, laying the
+                    groundwork for transitioning to the next stage of the project — detailed
+                    studies and a technical-economic feasibility assessment.
+                </p>
+                <br>
+                <p>
+                    At present, the necessary documents and reports required for obtaining a mining license have been submitted to the relevant state authorities. Once the profit-sharing agreement between “Reef Group” LLC and the Government of Afghanistan is finalized, the process of establishing a Joint Venture will commence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--contacts-->
+    <partial name="Navbar_Contact" />
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" asp-controller="Account" asp-action="Register">Become a member</a>
+                </div>
+            </div>
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="" asp-append-version="true" />
+            </div>
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
+                            <li><a asp-controller="Legal" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Legal" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="twiter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="linkedin" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/scss/about.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/scss/contact.scss" asp-append-version="true" />
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                <div>
+                    <img src="~/assets/img/aboutPageImg/ReefGroupLogo.svg" alt="" asp-append-version="true" />
+                </div>
+            </a>
+            <ul>
+                <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                <li><a asp-controller="Projects" asp-action="Gallery">Project Gallery</a></li>
+                <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--about-section-->
+    <section class="about-section">
+        <div class="about-section-main">
+            <div class="about-section-main-left-block">
+                <div class="about-section-main-left-block-title">
+                    <div>Who we are</div>
+                    <p>About Our Company</p>
+                </div>
+                <div class="left-block-text">
+                    <p>
+                        <span>Reef Group — </span> is an international mining company with its registered office in Bishkek, Almaty, and Kabul established by Az Geo providing engineering, geological, drilling, mining services, as well as explosives operations and raw material transportation services for the mining industry in the Republic of Azerbaijan, Kyrgyz Republic, Islamic Emirate of Afghanistan and Kazakhstan Republic .The company undertakes orders for the development of work programs, preparation of projects for geological exploration at various stages, as well as the execution of geological exploration works from start to completion of the project. Additionally, company prepares feasibility studies and reports with resource estimates and provides consulting and auditing services.The company has extensive experience in the evaluation of mineral resources and ore reserves, project assessment and auditing, preparation of reports, and feasibility studies, as required by mining companies and financial institutions in Kyrgyzstan and Azerbaijan.
+                    </p>
+                </div>
+            </div>
+            <div class="about-section-main-right-block">
+                <details class="about-section-main-right-block-item">
+                    <summary>
+                        01. Our Story
+                        <span><img src="~/assets/img/aboutPageImg/+.svg" alt="" asp-append-version="true" /></span>
+                    </summary>
+                    <p>
+                        Reef Group was founded to bring together highly qualified geologists, engineers, and data specialists to provide modern, reliable, and efficient consulting solutions in the field of geology and mining. Considering the experience of the parent company Az Geo, which transfers its expertise and know-how to the locally registered REEF GROUP, the latter has successfully formed a highly professional and efficient team with international experience. This team effectively meets client commitments, providing services in accordance with technical specifications and established timelines.
+                    </p>
+                </details>
+                <details class="about-section-main-right-block-item">
+                    <summary>
+                        02. Our Mission
+                        <span><img src="~/assets/img/aboutPageImg/+.svg" alt="" asp-append-version="true" /></span>
+                    </summary>
+                    <p>
+                        To support sustainable and efficient use of natural resources through advanced geological consulting, innovation, and professional expertise. The company's staff consists of highly qualified expatriates who have worked in Azerbaijan, Turkiye, Iran, Georgia, Kyrgyzstan, Kazakhstan, and Uzbekistan. Wherever our specialists have worked, they have built strong teams of local professionals, fostering their development. Currently, the main mission of our team is to implement geological projects (both exploration and mining) while developing a strong team in the Central Asia.
+                    </p>
+                </details>
+                <details class="about-section-main-right-block-item">
+                    <summary>
+                        03. Our Vision
+                        <span><img src="~/assets/img/aboutPageImg/+.svg" alt="" asp-append-version="true" /></span>
+                    </summary>
+                    <p>
+                        To become a leading geological consulting company in Central Asia, recognized for innovation, technical excellence, and integrity in the exploration and sustainable development of mineral resources, to be the trusted partner of choice for governments, investors, and mining companies by providing reliable geological expertise and promoting responsible use of natural resources.
+                    </p>
+                </details>
+            </div>
+        </div>
+        <div class="about-section-partners-title">
+                <p>Brands we have worked with</p>
+        </div>
+        <div class="about-section-swiper" style="margin-bottom: 100px">
+                <div class="logos-slider">
+                    <div class="logos-track">
+                        <img style="padding: 10px 20px" src="~/assets/img/partners_logo/AfKz.webp" alt="logo" asp-append-version="true" />
+                        <img style="padding: 10px 20px " src="~/assets/img/partners_logo/av.webp" alt="logo" asp-append-version="true" />
+                        <img style="padding: 10px 20px " src="~/assets/img/partners_logo/AzGeo.webp" alt="logo" asp-append-version="true" />
+                        <img style="padding: 10px 20px " src="~/assets/img/partners_logo/AzInterPartlayish.webp" alt="logo" asp-append-version="true" />
+                        <img style="padding: 10px 20px " src="~/assets/img/partners_logo/decide_logo_white.webp" alt="logo" asp-append-version="true" />
+                        <img style="padding: 10px 20px " src="~/assets/img/partners_logo/Nobel.webp" alt="logo" asp-append-version="true" />
+                        <img style="padding: 10px 20px " src="~/assets/img/partners_logo/Rana.webp" alt="logo" asp-append-version="true" />
+                        <img style="padding: 10px 20px " src="~/assets/img/partners_logo/Smmepc.webp" alt="logo" asp-append-version="true" />
+                    </div>
+                </div>
+            </div>
+        @*<div class="about-section-statistics-block">
+                <div class="about-section-statistics-block-title">
+                    <p>Our Statistics</p>
+                </div>
+                <div class="about-section-statistics-block-flex-container">
+                    <div class="about-section-statistics-block-flex-container-item">
+                        <div class="about-section-statistics-block-flex-container-item-title">
+                            <div><img src="~/assets/img/aboutPageImg/personsvg.svg" alt="" asp-append-version="true" /></div>
+                            <p>Customers</p>
+                        </div>
+                        <div class="about-section-statistics-block-flex-container-item-desc">
+                            <div class="counter-container">
+                                <span id="counter" class="counterjs" data-target="7000">0</span>+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section-statistics-block-flex-container-item">
+                        <div class="about-section-statistics-block-flex-container-item-title">
+                            <div><img src="~/assets/img/aboutPageImg/personsvg.svg" alt="" asp-append-version="true" /></div>
+                            <p>Customers</p>
+                        </div>
+                        <div class="about-section-statistics-block-flex-container-item-desc">
+                            <div class="counter-container">
+                                <span id="counter" class="counterjs" data-target="7000">0</span>+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section-statistics-block-flex-container-item">
+                        <div class="about-section-statistics-block-flex-container-item-title">
+                            <div><img src="~/assets/img/aboutPageImg/personsvg.svg" alt="" asp-append-version="true" /></div>
+                            <p>Customers</p>
+                        </div>
+                        <div class="about-section-statistics-block-flex-container-item-desc">
+                            <div class="counter-container">
+                                <span id="counter" class="counterjs" data-target="7000">0</span>+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section-statistics-block-flex-container-item">
+                        <div class="about-section-statistics-block-flex-container-item-title">
+                            <div><img src="~/assets/img/aboutPageImg/personsvg.svg" alt="" asp-append-version="true" /></div>
+                            <p>Customers</p>
+                        </div>
+                        <div class="about-section-statistics-block-flex-container-item-desc">
+                            <div class="counter-container">
+                                <span id="counter" class="counterjs" data-target="7000">0</span>+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </section>
+
+    <!--License-section-->
+    <section class="license-section">
+        <div class="license-section-main">
+            <div class="license-section-main-title">
+                <p>Our License</p>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper license-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="slide-number">01</p>
+                        <img src="~/assets/img/aboutPageImg/license1.webp" alt="License 1" asp-append-version="true" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="slide-number">02</p>
+                        <img src="~/assets/img/aboutPageImg/license2.webp" alt="License 2" asp-append-version="true" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="slide-number">03</p>
+                        <img src="~/assets/img/aboutPageImg/license3.webp" alt="License 3" asp-append-version="true" />
+                    </div>
+                </div>
+
+                <div class="swiper-navigation">
+                    <div class="custom-swiper-button-prev">
+                        <img class="left-arrow" src="~/assets/img/aboutPageImg/rightSvgArrow.svg" alt="Previous" asp-append-version="true" />
+                    </div>
+                    <div class="custom-swiper-button-next">
+                        <img src="~/assets/img/aboutPageImg/rightSvgArrow.svg" alt="Next" asp-append-version="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Team-section-->
+    <section class="team-section">
+        <div class="team-section-main">
+            <div class="team-section-main-title">
+                <div class="team-title"><p>Our Team</p></div>
+                <div class="team-title-desc">
+                    <p>
+                        Our team of experts delivers reliable and efficient mining, transport, and consulting solutions
+                    </p>
+                </div>
+            </div>
+            <div class="team-section-main-img-container">
+                <div class="row">
+                    <img src="~/assets/img/ourTeam/1.webp" alt="Team 1" asp-append-version="true" />
+                    <img src="~/assets/img/ourTeam/2.webp" alt="Team 2" asp-append-version="true" />
+                </div>
+                <div class="row">
+                    <img src="~/assets/img/ourTeam/3.webp" alt="Team 3" asp-append-version="true" />
+                    <img src="~/assets/img/ourTeam/4.webp" alt="Team 4" asp-append-version="true" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <partial name="Navbar_Contact"/>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" href="#">Become a member</a>
+                </div>
+            </div>
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="" asp-append-version="true" />
+            </div>
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
+                            <li><a asp-controller="Legal" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Legal" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="twiter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="linkedin" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="~/js/about.js" asp-append-version="true"></script>
+</body>
+</html>

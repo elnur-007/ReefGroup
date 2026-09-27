@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReefGroup</title>
+
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/scss/home.css" asp-append-version="true" />
+</head>
+<body>
+    <!--Header section-->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="burger-menu">
+                <div class="menu-block">
+                    <div class="menu-block-text">
+                        <img src="~/assets/img/homepageImg/Group.svg" alt="" asp-append-version="true" />
+                    </div>
+                    <div>
+                        <img class="burger-img" src="~/assets/img/homepageImg/burgerMenuIcon.svg" alt="" asp-append-version="true" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main">
+                <div class="header-main-text">
+                    <p class="p1">We connect people shaping the world</p>
+                    <p class="p2">
+                        A private community for the world’s most ambitious young founders
+                    </p>
+                </div>
+                <div class="header-swiper">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="~/assets/img/homepageImg/backGroundSlider1.webp" asp-append-version="true" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/assets/img/homepageImg/backgroundSlider2.webp" asp-append-version="true" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/assets/img/homepageImg/backGroundSlider3.webp" asp-append-version="true" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-menu" id="modalMenu">
+                <div class="modal-menu-content">
+                    <div class="modal-menu-header">
+                        <div class="modal-menu-header-content">
+                            <a asp-controller="Home" asp-action="Index">
+                                <div class="modal-menu-logo">
+                                    <img src="~/assets/img/homepageImg/modalMenuLogo.svg" alt="modal-menu-logo" asp-append-version="true" />
+                                </div>
+                            </a>
+
+                            <div class="modal-menu-desc">
+                                Let’s Talk
+                                <img class="modal-close" src="~/assets/img/homepageImg/xİcon.svg" alt="Close icon" asp-append-version="true" />
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                            <li><a asp-controller="Projects" asp-action="Gallery">Project Gallery</a></li>
+                            <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                            <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                            <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Information section-->
+    <div class="information">
+        <div class="information-wrapper">
+            <div class="information-wrapper-block">
+                <p class="info-text">INFORMATION</p>
+                <p class="company-name">ABOUT THE COMPANY <span>ReefGroup</span></p>
+                <p class="company-desc">
+                    ReefGroup is an international mining company with its registered office in Bishkek. Founded by Az Geo, the company provides engineering, geological, drilling, and mining services, as well as blasting operations and raw material transportation services for the mining industry in the Republic of Azerbaijan and the Kyrgyz Republic.
+                </p>
+                <div class="line-item">
+                    <img src="~/assets/img/homepageImg/Line 1.svg" alt="" asp-append-version="true" />
+                </div>
+                <a href="" class="more-btn">More</a>
+            </div>
+        </div>
+        <div class="information-logos">
+            <div class="logos-slider">
+                <div class="logos-track">
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/AfKz.webp" alt="logo" asp-append-version="true" />
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/av.webp" alt="logo" asp-append-version="true" />
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/AzGeo.webp" alt="logo" asp-append-version="true" />
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/AzInterPartlayish.webp" alt="logo" asp-append-version="true" />
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/decide_logo_white.webp" alt="logo" asp-append-version="true" />
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/Nobel.webp" alt="logo" asp-append-version="true" />
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/Rana.webp" alt="logo" asp-append-version="true" />
+                    <img style="padding: 10px 20px" src="~/assets/img/partners_logo/Smmepc.webp" alt="logo" asp-append-version="true" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Service section-->
+    <section class="service">
+        <div class="service-block">
+            <div class="service-block-text">
+                <p class="service-block-text-title">
+                    Services created
+                    <br>
+                    specifically for you
+                </p>
+                <p class="service-block-text-about">
+                    Developed by an award-winning team, we deliver integrated mining, transport, and consulting solutions
+                    to support efficient and sustainable operations
+                </p>
+            </div>
+            <div class="service-block-container">
+                <div class="block-container-item">
+                    <div class="item-icon">
+                        <img class="item-icon-svg" src="~/assets/img/homepageImg/1iconsvg.svg" alt="" asp-append-version="true" />
+                    </div>
+                    <div class="item-description">
+                        <p class="item-title">
+                            Drilling and Blasting Operations
+                        </p>
+                        <p class="item-about">
+                            Reef Group provides full-cycle drilling and blasting services for mining operations...
+                        </p>
+                    </div>
+                </div>
+                <div class="block-container-item">
+                    <div class="item-icon">
+                        <img class="item-icon-svg" src="~/assets/img/homepageImg/employeeIcon.svg" alt="" asp-append-version="true" />
+                    </div>
+                    <div class="item-description">
+                        <p class="item-title">
+                            Transportation and Excavation
+                            Work
+                        </p>
+                        <p class="item-about">
+                            Reef Group carries out excavation and transportation of rock mass as part of integrated...
+                        </p>
+                    </div>
+                </div>
+                <div class="block-container-item">
+                    <div class="item-icon">
+                        <img class="item-icon-svg" src="~/assets/img/homepageImg/3iconsvg.svg" alt="" asp-append-version="true" />
+                    </div>
+                    <div class="item-description">
+                        <p class="item-title">
+                            Consulting
+                            <br>
+                            Services
+                        </p>
+                        <p class="item-about">
+                            Reef Group provides comprehensive consulting for the mining industry,
+                            covering all stages — from geological...
+                        </p>
+                    </div>
+                </div>
+                <div class="block-container-item">
+                    <div class="item-icon">
+                        <img class="item-icon-svg" src="~/assets/img/homepageImg/4iconsvg.svg" alt="" asp-append-version="true" />
+                    </div>
+                    <div class="item-description">
+                        <p class="item-title">
+                            Geological
+                            <br>
+                            Services
+                        </p>
+                        <p class="item-about">
+                            Reef Group performs a complete range of geological exploration works — from the development of work programs...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="project-block">
+            <div class="project-block-title">
+                <h1>Our projects</h1>
+            </div>
+            <div class="project-block-subttitles">
+                <div class="project-block-subttitles-mini">
+                    <span>Date</span><span>Project</span>
+                </div>
+                <!-- <div class="project-block-subttitles-empty"></div> -->
+                <div class="project-block-subttitles-line">
+                    <img src="~/assets/img/homepageImg/LineProject.svg" alt="" asp-append-version="true" />
+                </div>
+            </div>
+
+            <a asp-controller="Projects" asp-action="Detail" class="project-block-card-link">
+                <div class="project-block-card">
+                    <div class="project-block-card-img">
+                        <img src="~/assets/img/projectDetailImg/projectDetailPhoto.webp" alt="" asp-append-version="true" />
+                    </div>
+                    <div class="project-block-card-center">
+                        <div class="project-block-card-center-title">
+                            <p>Activities of Company in Emirate of Afghanistan</p>
+                        </div>
+                        <div class="project-block-card-center-time">
+                            <p>12.12.2024</p>
+                        </div>
+                        <div class="project-block-card-center-link">
+                            <button class="discover-btn">
+                                <span>Discover the project</span>
+                                <img src="~/assets/img/homepageImg/arrow-right-circle.svg" alt="Arrow icon" class="arrow-icon" asp-append-version="true" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-block-card-right">
+                        <div class="project-block-card-right-title">
+                            <p>Our projects</p>
+                        </div>
+                        <div class="project-block-card-right-description">
+                            <p>
+                                On 12 December 2024, Reef Group participated in the tender process for the Qale Zal Gold Kunduz mining project...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!--Contacts-->
+        <partial name="Navbar_Contact" />
+
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" asp-controller="Account" asp-action="Register">Become a member</a>
+                </div>
+            </div>
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="" asp-append-version="true" />
+            </div>
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
+                            <li><a asp-controller="Legal" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Legal" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="twiter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="linkedin" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="~/js/home.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Gallery</title>
+
+    <link rel="icon" type="image/x-icon" href="~/assets/img/icons/reef_icon.svg" asp-append-version="true" />
+    <link rel="stylesheet" href="~/scss/ourProject.css" asp-append-version="true" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                <div>
+                    <img src="~/assets/img/aboutPageImg/ReefGroupLogo.svg" alt="ReefGroup" asp-append-version="true" />
+                </div>
+            </a>
+            <ul>
+                <li><a asp-controller="Services" asp-action="Index">Our Service</a></li>
+                <li><a asp-controller="Projects" asp-action="Gallery">Project Gallery</a></li>
+                <li><a asp-controller="About" asp-action="Index">Learn About Us</a></li>
+                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--project-section-->
+    <section class="project-section">
+        <div class="project-section-main">
+            <div class="project-section-block-text">
+                <div class="project-section-block-text-title">
+                    <p>Our Service</p>
+                </div>
+                <div class="project-section-block-text-description">
+                    <p>Our Results <br />-Driven <span>Project</span> Showcase</p>
+                </div>
+                <a href="#" class="more-btn">Work with us</a>
+            </div>
+
+            <div class="project-section-block-img">
+                <div class="project-section-block-image">
+                    <img src="~/assets/img/ourProjectImg/project.webp" alt="" asp-append-version="true" />
+                    <a asp-controller="Services" asp-action="Index" class="more-btn1">Our services</a>
+                </div>
+            </div>
+
+            <div class="project-section-flexContainer">
+                <div class="project-section-flexContainer-row">
+                    <div class="project-section-flexContainer-row-item firstImg">
+                        <div class="project-section-flexContainer-row-item-about">
+                            <div class="project-section-flexContainer-row-item-title">
+                                <p>Best Residential Interior Apartment Europe</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-time">
+                                <p>01.02.2024</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-link">
+                                <a asp-controller="Projects" asp-action="Detail" class="discover-btn">
+                                    <span>Discover the project</span>
+                                    <img src="~/assets/img/homepageImg/arrow-right-circle.svg" alt="Arrow icon" class="arrow-icon" asp-append-version="true" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section-flexContainer-row-item secondImg">
+                        <div class="project-section-flexContainer-row-item-about">
+                            <div class="project-section-flexContainer-row-item-title">
+                                <p>Best Residential Interior Apartment Europe</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-time">
+                                <p>01.02.2024</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-link">
+                                <a asp-controller="Projects" asp-action="Detail" class="discover-btn">
+                                    <span>Discover the project</span>
+                                    <img src="~/assets/img/homepageImg/arrow-right-circle.svg" alt="Arrow icon" class="arrow-icon" asp-append-version="true" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section-flexContainer-row">
+                    <div class="project-section-flexContainer-row-item thirdImg">
+                        <div class="project-section-flexContainer-row-item-about">
+                            <div class="project-section-flexContainer-row-item-title">
+                                <p>Best Residential Interior Apartment Europe</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-time">
+                                <p>01.02.2024</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-link">
+                                <a asp-controller="Projects" asp-action="Detail" class="discover-btn">
+                                    <span>Discover the project</span>
+                                    <img src="~/assets/img/homepageImg/arrow-right-circle.svg" alt="Arrow icon" class="arrow-icon" asp-append-version="true" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section-flexContainer-row-item fourImg">
+                        <div class="project-section-flexContainer-row-item-about">
+                            <div class="project-section-flexContainer-row-item-title">
+                                <p>Best Residential Interior Apartment Europe</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-time">
+                                <p>01.02.2024</p>
+                            </div>
+                            <div class="project-section-flexContainer-row-item-link">
+                                <a asp-controller="Projects" asp-action="Detail" class="discover-btn">
+                                    <span>Discover the project</span>
+                                    <img src="~/assets/img/homepageImg/arrow-right-circle.svg" alt="Arrow icon" class="arrow-icon" asp-append-version="true" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--contacts-->
+    <partial name="Navbar_Contact" />
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <div class="footer-flex-center">
+                <div class="footer-center">
+                    <h1>Let’s make this official, sign up and access the vault</h1>
+                    <a class="magic-button" asp-controller="Account" asp-action="Register">Become a member</a>
+                </div>
+            </div>
+            <div class="footer-title">
+                <img src="~/assets/img/homepageImg/footerTitle.svg" alt="" asp-append-version="true" />
+            </div>
+            <div class="footer-down-block">
+                <div class="footer-down-block-title-section">
+                    <div class="footer-down-block-title-section-titles">
+                        <p>SITEMAP</p>
+                        <p>COMPANY</p>
+                    </div>
+                    <div class="footer-down-block-title-line"></div>
+                </div>
+                <div class="footer-down-block-abouts">
+                    <div class="footer-down-block-abouts-first">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Index">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-second">
+                        <ul class="footer-down-block-abouts-first-ul">
+                            <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
+                            <li><a asp-controller="Legal" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a asp-controller="Legal" asp-action="Terms">Terms Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-down-block-abouts-third">
+                        <a class="icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/facebooksvg.svg" alt="facebook" asp-append-version="true" />
+                        </a>
+                        <a class="icon instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/instagramsvg.svg" alt="Instagram" asp-append-version="true" />
+                        </a>
+                        <a class="icon twiter" href="https://x.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/twittersvg.svg" alt="twiter" asp-append-version="true" />
+                        </a>
+                        <a class="icon linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                            <img src="~/assets/img/homepageImg/linkdinsvg.svg" alt="linkedin" asp-append-version="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
